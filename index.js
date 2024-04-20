@@ -1,6 +1,7 @@
-import "dotenv/config";
-import nodemailer from "nodemailer";
 import inquirer from "inquirer";
+import nodemailer from "nodemailer";
+
+import "dotenv/config";
 import htmlCode from "./htmlCode.js";
 
 const transporter = nodemailer.createTransport({
@@ -37,7 +38,6 @@ const questions = [
             if (pass) {
                 return true;
             }
-
             return "Please enter a valid email address";
         },
     },
