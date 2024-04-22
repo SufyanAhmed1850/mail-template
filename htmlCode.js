@@ -15,7 +15,11 @@ const htmlCode = `<!DOCTYPE html>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+        }
+
+        a {
+            text-decoration-color: #a58ae3;
         }
 
         .main-table {
@@ -55,6 +59,14 @@ const htmlCode = `<!DOCTYPE html>
             color: #a58ae3;
         }
 
+        .resume-url {
+            color: #a58ae3;
+        }
+
+        .portfolio-url{
+            color: #a58ae3;
+        }
+
         .social-links {
             text-align: right;
             margin-top: 12px;
@@ -75,7 +87,7 @@ const htmlCode = `<!DOCTYPE html>
 
         .heading {
             color: #e6e6e6;
-            font-size: 24px;
+            font-size: 32px;
             margin-bottom: 10px;
         }
 
@@ -86,7 +98,7 @@ const htmlCode = `<!DOCTYPE html>
             margin-bottom: 20px;
         }
 
-        @media screen and (max-width: 775px) {
+        @media screen and (max-width: 900px) {
 
             .header-parent {
                 padding: 28px 0 22px 0;
@@ -119,24 +131,34 @@ const htmlCode = `<!DOCTYPE html>
                             </a>
                         </td>
                         <td class="social-links">
-                        <a href="https://github.com/SufyanAhmed1850" target="_blank"><img src="cid:github" alt="GitHub"></a>
-                        <a href="https://www.linkedin.com/in/sufyanahmed1850" target="_blank"><img src="cid:linkedin" alt="LinkedIn"></a>
-                        <a href="https://wa.me/923327319831" target="_blank"><img src="cid:whatsapp" alt="WhatsApp"></a>
-                        <a href="https://twitter.com/devsufyan" target="_blank"><img src="cid:twitter" alt="Twitter"></a>
+                            <a href="https://github.com/SufyanAhmed1850" target="_blank"><img src="cid:github"
+                                    alt="GitHub"></a>
+                            <a href="https://www.linkedin.com/in/sufyanahmed1850" target="_blank"><img
+                                    src="cid:linkedin" alt="LinkedIn"></a>
+                            <a href="https://wa.me/923327319831" target="_blank"><img src="cid:whatsapp"
+                                    alt="WhatsApp"></a>
+                            <a href="https://twitter.com/devsufyan" target="_blank"><img src="cid:twitter"
+                                    alt="Twitter"></a>
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
         <tr>
-            <td class="content">
-                <h2 class="heading">Welcome to Our Newsletter!</h2>
-                <p class="para">Thank you for subscribing to our newsletter. Stay tuned for exciting updates and
-                    offers!</p>
+        <td class="content" style="padding: 16px 36px;">
+                <h1 class="heading" style="text-align: left;">Hello,</h1>
+                <p class="para" style="text-align: left;">I am <b>interested</b> in the <b>MERN Stack
+                        Developer Position</b> at
+                    <b>OneClick Digital Pvt
+                        Ltd.</b> Please find my <b>portfolio</b> at
+                    <a href="https://sufyanahmed.vercel.app/" target="_blank"><span class="portfolio-url">sufyanahmed.vercel.app</span></a>, and I have
+                    attached my <a href="https://res.cloudinary.com/dke5jqhus/raw/upload/v1713477619/Resume/SufyanResume.pdf"
+                        download target="_blank"><span class="resume-url">resume</span></a> as well.</p>
             </td>
         </tr>
     </table>
 </body>
+
 </html>`;
 
 export default htmlCode;

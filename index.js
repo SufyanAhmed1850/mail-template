@@ -50,7 +50,7 @@ inquirer.prompt(questions).then((answers) => {
             address: process.env.GOOGLE_USER,
         },
         to: answers.to,
-        subject: "Subscription: Newsletter Subscribed",
+        subject: "MERN Stack Developer (Specializing in Next.js, Node.js, and CRM) - Application",
         html: htmlCode,
         attachments: [
             {
@@ -72,6 +72,11 @@ inquirer.prompt(questions).then((answers) => {
                 filename: "twitter.png",
                 path: "./images/twitter.png",
                 cid: "twitter",
+            },
+            {
+                filename: "SufyanResume.pdf",
+                path: "./images/SufyanResume.pdf",
+                cid: "resume",
             },
         ],
     };
